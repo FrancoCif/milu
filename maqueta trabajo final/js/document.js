@@ -17,12 +17,12 @@ function creargutter() {
   switch (articulo) {
     case "moviles": producto = ["", "Samsung Galaxy A54 ", "Samsung Galaxy S23 Ultra ", "Iphone 13", "iphone 12 mini", "Motorola Edge 30 Ultra ", " Motorola Razr 40 Ultra"]; break;
     case "computacion": producto = ["", " Samsung Galaxy Book3 Pro 360", "Samsung Monitor Odysssey Ark", " Apple MacBook Air M2", "Apple iMac M1", "Lenovo ThinkPad X12 Detachable", " Lenovo ThinkPad T14"]; break;
-    case "accesorios": producto = ["", "Gorro Tejido de Rayas", "Gorro Tejido Green Apple", "Scrunchie Praga", "Sunglasses Noir", "Sunglasses Carey", "Gorra Noir"]; break;
+    case "accesorios": producto = ["", "Apple AirPods Max", "Apple Watch SE", "Samsung Galaxy Buds2", "Samsung Galaxy Tab 8", "MotoBuds 250", "Morola XT200"]; break;
   }
   switch (articulo) {
     case "moviles": precio = ["", "$203.999", "$559.999", "$569.803", "$793.999", "$549.990", "$349.999", "$549.999"]; break;
     case "computacion": precio = ["", "$1.094.999", "$1.629.999", "$819.999", "$1.399.999", "$800.000", "$958.799"]; break;
-    case "accesorios": precio = ["", "$2.000", "$2.000", "$500", "$30.000", "$30.000", "$7.000"]; break;
+    case "accesorios": precio = ["", "$399.999", "$179.999", "$49.999", "$134.999", "$34.999", "$24.399"]; break;
   }
 
   //primer div del gutter
@@ -63,6 +63,7 @@ function creargutter() {
     var imagen = document.createElement("img");
     imagen.src = "/img/comprar/" + articulo + i + ".png";
     imagen.className = "card-img-top";
+    // imagen.style="width: 350px; width: 350px;";
     imagen.alt = "...";
     div.appendChild(imagen);
 
@@ -98,8 +99,8 @@ function creargutter() {
 
 //listado de productos
 function elementos() {
-  var articulo = ["Samsung Galaxy A54 ", "Samsung Galaxy S23 Ultra ", "Iphone 13", "iphone 12 mini", "Motorola Edge 30 Ultra ", " Motorola Razr 40 Ultra", " Samsung Galaxy Book3 Pro 360", "Samsung Monitor Odysssey Ark", " Apple MacBook Air M2", "Apple iMac M1", "Lenovo ThinkPad X12 Detachable", " Lenovo ThinkPad T14"]
-  var precio = ["$203.999", "$559.999", "$569.803", "$793.999", "$549.990", "$349.999", "$549.999", "$1.094.999", "$1.629.999", "$819.999", "$1.399.999", "$800.000", "$958.799"]
+  var articulo = ["Samsung Galaxy A54 ", "Samsung Galaxy S23 Ultra ", "Iphone 13", "iphone 12 mini", "Motorola Edge 30 Ultra ", " Motorola Razr 40 Ultra", " Samsung Galaxy Book3 Pro 360", "Samsung Monitor Odysssey Ark", " Apple MacBook Air M2", "Apple iMac M1", "Lenovo ThinkPad X12 Detachable", " Lenovo ThinkPad T14", "Apple AirPods Max", "Apple Watch SE", "Samsung Galaxy Buds2", "Samsung Galaxy Tab 8", "MotoBuds 250", "Morola XT200"]
+  var precio = ["$203.999", "$559.999", "$569.803", "$793.999", "$549.990", "$349.999", "$549.999", "$1.094.999", "$1.629.999", "$819.999", "$1.399.999", "$800.000", "$958.799", "$399.999", "$179.999", "$49.999", "$134.999", "$34.999", "$24.399"]
   for (var i = 0; i < articulo.length; i++) {
     var lista = document.getElementById("tabla");
     var tr = document.createElement("tr");
